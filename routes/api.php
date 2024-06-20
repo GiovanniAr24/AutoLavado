@@ -27,6 +27,7 @@ Route::get('/etapas/{id_servicios}', [EtapasController::class, 'show']);
 Route::post('/etapa', [EtapasController::class, 'viewApi']);
 Route::post('etapa/guardar', [EtapasController::class, 'storeApi'])->name('etapa.guardar');
 Route::delete('/etapa/borrar/{id}',[EtapasController::class,'deleteApi']);
+Route::post('/etapa/actualizar/{id}', [EtapasController::class, 'update']);
 
 
 Route::post('register', [UserController::class, 'register']);
